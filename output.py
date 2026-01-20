@@ -1,7 +1,7 @@
 import zipfile
 import os
 
-with zipfile.ZipFile('document.docx', 'r') as zip_ref:
+with zipfile.ZipFile('Гайка шлицевая молочная, резьбовая, DIN AISI 316.docx', 'r') as zip_ref:
     for file in zip_ref.namelist():
         if file.startswith('word/media/'):
             zip_ref.extract(file, 'output_folder')
